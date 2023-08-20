@@ -1,0 +1,275 @@
+/* :root{
+    --shade-of-blue : #023B6D;
+    --transition: all 0.5s;   
+} */
+
+
+
+:root{
+    --my-bg: pink;
+    --transition: all 0.5s;
+    --border: 3px solid var(--bs-info) !important ;
+
+}
+
+
+nav {
+    background-color: #023B6D !important;
+}
+
+li a {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+::placeholder {
+    color: white !important;
+}
+
+nav input {
+    outline-width: 0 !important;
+    outline: 0 !important;
+    border: none !important;
+}
+
+input:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: none
+}
+
+.image {
+    animation: move 1.8s linear infinite alternate-reverse;
+    /* filter: grayscale(100%); */
+}
+
+/* .image:hover{
+filter: grayscale(0);
+} */
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+
+    }
+
+    /* 0%{
+        scale: 1;
+    }
+    25%{
+        scale:0.4;
+        transform: rotate(360deg);
+    }
+    50%{
+        transform: translate(-500px,-200px);
+    }
+    100%{
+        transform: translate(500px,200px);
+        transform: rotate(400deg);
+        
+    } */
+
+    /* 0%{
+        transform: translate(0,0);
+    }
+    20%{
+        transform: translate(-100px,-60px);
+    }
+    40%{
+        transform: translate(-200px,0px);
+    }
+    60%{
+        transform: rotate(360deg)
+    }
+    80%{
+        scale: 1.5;
+    }
+    100%{
+        transform: translate(300px,400px);
+    } */
+
+}
+
+
+.brand-img {
+    filter: grayscale(100%);
+    transition: all 0.4s;
+}
+
+.brand-img:hover {
+    filter: grayscale(0%);
+    scale: 1.1;
+}
+
+
+.gray {
+    width: 10%;
+    height: 1px;
+    background-color: lightgray;
+    position: relative;
+}
+
+
+.blue{
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+
+}
+
+/* h2::after{
+    width: 100px !important;
+    height: 50px !important;
+    background-color: #023B6D !important;
+
+} */
+
+/* .cont{
+    background-color: red;
+} */
+
+.list ul{
+    list-style:none !important;
+}
+
+.red{
+    background-color: red !important;
+}
+.red{
+    background-color:#023B6D !important;
+}
+.icon{
+    transition: var(--transition);
+}
+.download:hover .icon{
+    color: var(--shade-of-blue)
+}
+
+.progress{
+    height: 10px !important;
+}
+.progress-bar{
+    background-color: #4668A2 !important;
+    
+}
+
+
+.bg-container{
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url('https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg') fixed center center;
+}
+
+.my-card{
+    transition: var(--transition);
+}
+.my-card:hover{
+    --transition: all 0.7s;
+    transform: translateY(-10px);
+}
+
+.my-card:hover .my-card-text{
+    color: var(--bs-info) !important;
+    cursor: pointer;
+}
+
+
+.my-btn{
+    transition: var(--transition);
+}
+.my-btn:hover{
+    color: white;
+    background-color: var(--bs-info);
+}
+
+.grid-layout img{
+    transition: var(--transition);
+}
+
+.grid-layout img:hover{
+    scale: 1.1;
+
+}
+
+.grid-layout .image1{
+    /* border: 2px solid red; */
+    overflow: clip !important;
+}
+
+.image1{
+    position: relative;
+}
+
+.bottom{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    z-index: 222;
+    transition: var(--transition);
+    opacity: 0;
+    background-color: rgba(55, 81, 126,0.7);
+    color: white;
+}
+
+.image1:hover .bottom{
+    opacity:1 ;
+}
+
+.my-icons i{
+    transition: var(--transition);
+}
+
+.my-icons i:hover{
+    --transition : all 0.3s;
+    cursor: pointer;
+    background-color: var(--bs-info) !important;
+    color: white !important;
+}
+
+
+
+.border-card{
+    border-top:var(--border) !important 
+}
+
+
+.contact-icon{
+    --transition:all 0.2s;
+    background-color: #E7F5FB;
+    clip-path: circle();
+    padding: 0.6rem;
+    color: var(--bs-info);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.contact-icon:hover{
+    color: white;
+    background-color: var(--bs-info);
+}
+
+.my-contact-card{
+    border-top: var(--border) !important;
+    border-bottom: var(--border) !important;
+}
+
+.form-card{
+    border-top: var(--border) !important;
+    border-bottom: var(--border) !important;
+}
+
+@media only screen and (max-width:600px){
+    .my-image{
+        width: 100%;
+    }
+
+    .image{
+        animation-play-state: paused;
+    }
+
+}
